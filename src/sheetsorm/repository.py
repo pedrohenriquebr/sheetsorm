@@ -65,7 +65,7 @@ class Repository(Generic[T]):
             value = str(value)
             return datetime.datetime.strptime(value, '%Y-%m-%d %H:%M:%S')
         elif attr['dtype'] == 'bool':
-            return bool(value == '1' or value == 'True')    
+            return bool(value == '1' or value == 'TRUE')    
         elif attr['dtype'] == 'float':
             return float(value)
         else:
